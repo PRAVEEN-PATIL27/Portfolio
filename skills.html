@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills | Praveen Patil</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        background: radial-gradient(circle at top right, #141e30, #243b55);
+        color: #ffffff;
+        padding: 60px 20px;
+      }
+
+      .skills-container {
+        max-width: 1150px;
+        margin: auto;
+      }
+
+      .skills-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .skills-header h1 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .skills-header p {
+        font-size: 1.05rem;
+        opacity: 0.9;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+      }
+
+      .skill-card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(14px);
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        transition: 0.3s;
+      }
+
+      .skill-card:hover {
+        transform: translateY(-6px);
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      .skill-card h2 {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+        color: #00e5ff;
+      }
+
+      .skill {
+        margin-bottom: 18px;
+      }
+
+      .skill span {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+        opacity: 0.9;
+      }
+
+      .bar {
+        width: 100%;
+        height: 8px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      .fill {
+        height: 100%;
+        background: linear-gradient(90deg, #00e5ff, #00bcd4);
+        border-radius: 20px;
+      }
+
+      .tools {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .tool {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 8px 14px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+      }
+
+      .cta {
+        text-align: center;
+        margin-top: 60px;
+      }
+
+      .cta a {
+        display: inline-block;
+        padding: 14px 40px;
+        background: #00e5ff;
+        color: #003344;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .cta a:hover {
+        background: #00bcd4;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="skills-container">
+      <div class="skills-header">
+        <h1>My Skills</h1>
+        <p>Technologies and tools I use to build data-driven solutions</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Data Analysis -->
+        <div class="skill-card">
+          <h2>Data Analysis</h2>
+          <div class="skill">
+            <span>SQL <b>85%</b></span>
+            <div class="bar"><div class="fill" style="width: 85%"></div></div>
+          </div>
+          <div class="skill">
+            <span>Excel <b>80%</b></span>
+            <div class="bar"><div class="fill" style="width: 80%"></div></div>
+          </div>
+          <div class="skill">
+            <span>Data Visualization <b>75%</b></span>
+            <div class="bar"><div class="fill" style="width: 75%"></div></div>
+          </div>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="skill-card">
+          <h2>Backend Development</h2>
+          <div class="skill">
+            <span>Python <b>80%</b></span>
+            <div class="bar"><div class="fill" style="width: 80%"></div></div>
+          </div>
+          <div class="skill">
+            <span>Database Design <b>75%</b></span>
+            <div class="bar"><div class="fill" style="width: 75%"></div></div>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-card">
+          <h2>Tools & Platforms</h2>
+          <div class="tools">
+            <div class="tool">MySQL</div>
+            <div class="tool">Power BI</div>
+            <div class="tool">Git & GitHub</div>
+            <div class="tool">VS Code</div>
+            <div class="tool">Excel</div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-card">
+          <h2>Soft Skills</h2>
+          <div class="tools">
+            <div class="tool">Problem Solving</div>
+            <div class="tool">Analytical Thinking</div>
+            <div class="tool">Communication</div>
+            <div class="tool">Time Management</div>
+            <div class="tool">Team Collaboration</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <a href="#projects">See My Projects</a>
+      </div>
+    </section>
+  </body>
+</html>

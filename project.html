@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Praveen Patil</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #1f1c2c, #928dab);
+        color: #ffffff;
+        padding: 60px 20px;
+      }
+
+      .projects-container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .projects-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .projects-header h1 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .projects-header p {
+        font-size: 1.05rem;
+        opacity: 0.9;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 35px;
+      }
+
+      .project-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(14px);
+        border-radius: 22px;
+        padding: 30px;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .project-card:hover {
+        transform: translateY(-8px);
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      .project-card h2 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+        color: #00e5ff;
+      }
+
+      .project-card p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        opacity: 0.95;
+      }
+
+      .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 25px;
+      }
+
+      .tech {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 7px 14px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+      }
+
+      .links {
+        display: flex;
+        gap: 15px;
+      }
+
+      .links a {
+        flex: 1;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: 0.3s;
+      }
+
+      .btn-primary {
+        background: #00e5ff;
+        color: #003344;
+      }
+
+      .btn-primary:hover {
+        background: #00bcd4;
+      }
+
+      .btn-secondary {
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        color: #ffffff;
+      }
+
+      .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="projects-container">
+      <div class="projects-header">
+        <h1>Projects</h1>
+        <p>Hands-on projects showcasing my data analysis and backend skills</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Insurance Analysis -->
+        <div class="project-card">
+          <div>
+            <h2>Health Insurance Data Analysis</h2>
+            <p>
+              Performed in-depth SQL-based analysis on health insurance data to
+              understand how factors like region, age, BMI, smoking habits, and
+              number of dependents impact insurance charges. Generated
+              meaningful insights to identify high-risk and high-cost customer
+              segments.
+            </p>
+            <div class="tech-stack">
+              <div class="tech">SQL</div>
+              <div class="tech">MySQL</div>
+              <div class="tech">Data Analysis</div>
+              <div class="tech">Healthcare Dataset</div>
+            </div>
+          </div>
+          <div class="links">
+            <a
+              href="https://github.com/PRAVEEN-PATIL27/INSURANCE-REPORT"
+              class="btn-primary"
+              >View Analysis</a
+            >
+            <a
+              href="https://github.com/PRAVEEN-PATIL27/INSURANCE-REPORT"
+              class="btn-secondary"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- Project 2: Pizza Sales -->
+        <div class="project-card">
+          <div>
+            <h2>Pizza Sales Analysis</h2>
+            <p>
+              Analyzed pizza sales data using SQL to uncover best-selling
+              pizzas, peak order hours, revenue by category, and customer
+              ordering patterns. Created interactive Power BI dashboards to
+              visualize business performance.
+            </p>
+            <div class="tech-stack">
+              <div class="tech">SQL</div>
+              <div class="tech">Power BI</div>
+              <div class="tech">Excel</div>
+              <div class="tech">Sales Analytics</div>
+            </div>
+          </div>
+          <div class="links">
+            <a
+              href="https://github.com/PRAVEEN-PATIL27/Pizza_Sales_Analysis"
+              class="btn-primary"
+              >View Dashboard</a
+            >
+            <a
+              href="https://github.com/PRAVEEN-PATIL27/Pizza_Sales_Analysis"
+              class="btn-secondary"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- Project 3: Coffee Cart -->
+        <div class="project-card">
+          <div>
+            <h2>Python Coffee Cart Application</h2>
+            <p>
+              Developed a console-based Python application that simulates a
+              coffee shop ordering system. Users can view a menu, add items to a
+              cart, and generate a final bill, demonstrating strong fundamentals
+              in Python logic and control flow.
+            </p>
+            <div class="tech-stack">
+              <div class="tech">Python</div>
+              <div class="tech">Logic Building</div>
+              <div class="tech">Console Application</div>
+            </div>
+          </div>
+          <div class="links">
+            <a
+              href="https://github.com/PRAVEEN-PATIL27/COFFEECARTS"
+              class="btn-primary"
+              >View Code</a
+            >
+            <a
+              href="https://github.com/PRAVEEN-PATIL27/COFFEECARTS"
+              class="btn-secondary"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
